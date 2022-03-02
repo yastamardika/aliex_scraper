@@ -1,4 +1,8 @@
 seeder:
   file: ./seeder/seeder.rb
-  disabled: true
-  
+  disabled: false
+
+parser:
+  - file: ./parser/listings.rb
+    page_type: listings
+    disabled: false
