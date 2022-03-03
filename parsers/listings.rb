@@ -12,7 +12,6 @@ products.each do |product|
         url: url,
         _collection: "products",
         page_type: 'products',
-        fetch_type: 'browser',
         force_fetch: true,
         vars: {
           category: page['vars']['category'],
