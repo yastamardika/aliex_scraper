@@ -24,8 +24,8 @@ products.each do |product|
 end
 
 #load paginated links
-# pagination_links = html.css('.list-pagination .lazyload-placeholder')
-# p pagination_links
+pagination_links = html.css('.next-pagination-list')
+p pagination_links
 # pagination_links.each do |link|
 #   p link
 #   l_val = link.text.strip
