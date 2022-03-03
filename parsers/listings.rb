@@ -28,7 +28,7 @@ if index < 8
     page_type: "listings",
     method: "GET",
     fetch_type: "browser",
-    url: ,
+    url: next_url,
     headers: {
       "User-Agent" => "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
       "Sec-CH-UA" => "'Not A;Brand';v='99', 'Chromium';v='96', 'Google Chrome';v='96'"
