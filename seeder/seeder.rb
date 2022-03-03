@@ -7,6 +7,6 @@ pages << {
       category: "Women's clothing"
     },
     driver: {
-      "code": "await page.evaluate('window.scrollBy(0,1200)'); await sleep(1000);"
+      "code": "await page.evaluate('window.scrollBy(0,3600)'); await sleep(1000);"
     }
   }
