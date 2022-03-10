@@ -22,7 +22,7 @@ end
 
 index = page["vars"]["page"]
 all_page = html.css('.jump-aera .total-page')
-total_page = all_page.empty? ?  60 : all_page.text.scan(/\d+/)
+total_page = all_page.empty? ?  60 : all_page.text.scan(/\d+/)[0].to_i
 next_url = page["vars"]["base_url"] + "?page=#{index}" if index <= total_page
 index += 1
 if index <= total_page
