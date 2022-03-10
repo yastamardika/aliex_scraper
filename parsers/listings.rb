@@ -21,9 +21,11 @@ products.each do |product|
 end
 
 index = page["vars"]["page"]
-next_url = page["vars"]["base_url"] + "?page=#{index}" if index < 6
+all_page = html.css('.jump-aera .total-page')
+total_page = all_page.empty? ?  60 : all_page.text.scan(/\d+/)
+next_url = page["vars"]["base_url"] + "?page=#{index}" if index <= total_page
 index += 1
-if index < 8
+if index <= total_page
   pages << {
     page_type: "listings",
     method: "GET",
